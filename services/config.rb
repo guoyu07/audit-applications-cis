@@ -32,7 +32,7 @@ coreo_agent_audit_profile 'cis-kubernetes-benchmark' do
   timeout 120
 end
 
-coreo_agent_rule_runner 'agent-rules' do
+coreo_agent_rule_runner 'cis-applications-agent-rules' do
   action :run
   rules ${AUDIT_AGENT_RULES_ALERT_LIST}
   profiles ${AUDIT_AGENT_PROFILES_ALERT_LIST}
