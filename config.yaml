@@ -1,0 +1,13 @@
+variables:
+  AUDIT_AGENT_PROFILES_ALERT_LIST:
+      required: false
+      type: array
+      default:
+        - cis-docker-benchmark
+        - cis-kubernetes-benchmark
+                
+  FILTERED_OBJECTS:
+      description: "JSON object of string or regex of aws objects to include or exclude and tag in audit"
+      required: false
+      type: string
+      default:
