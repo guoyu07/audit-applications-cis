@@ -34,7 +34,6 @@ end
 
 coreo_agent_rule_runner 'cis-applications-agent-rules' do
   action :run
-  rules ${AUDIT_AGENT_RULES_ALERT_LIST}
   profiles ${AUDIT_AGENT_PROFILES_ALERT_LIST}
   filter(${FILTERED_OBJECTS}) if ${FILTERED_OBJECTS}
 end
